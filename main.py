@@ -1,4 +1,4 @@
-from account import Account
+from services.account import Account
 from utils.press_enter_message import press_enter_message
 
 main_menu = """
@@ -63,7 +63,7 @@ while True:
             else:
                 current_user.create_transaction(is_deposit=False, value=withdrawal_value)
 
-            press_enter_message()
+        press_enter_message()
 
     elif is_option_extract:
         print("Você escolheu a operação de conferir extrato bancário 🧾")
